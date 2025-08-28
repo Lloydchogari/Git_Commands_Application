@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands Hub</title>
+
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" sizes="192x192" href="icons/icon-192.png" type="image/png">
+    <link rel="icon" sizes="512x512" href="icons/icon-512.png" type="image/png">
+    <meta name="theme-color" content="#007acc">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"></div>
+            <h1 class="title">Git Commands Hub</h1>
+            <p class="subtitle">Your offline Git & GitHub reference</p>
+        </div>
+
+        <div class="categories" id="categories">
+            <!-- Categories will be populated by JS -->
+        </div>
+
+        <a href="https://git-scm.com/docs" class="external-link" target="_blank">
+             Complete Git Documentation
+        </a>
+    </div>
+
+    <div class="command-detail" id="commandDetail">
+        <button class="close-btn" onclick="closeCommand()">&times;</button>
+        <div id="commandContent"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
